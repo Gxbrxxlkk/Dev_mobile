@@ -32,9 +32,32 @@ fun main() {
     
 }
 
+//Parte 2
+/*
+@file:JvmName("JDoodle")
 
+import kotlin.math.* 
 
+fun interface Greeter {
+    fun greet(item: String)
+}
 
+fun main(args : Array<String>) {
+
+    val languages = listOf("Kotlin", "Java", "Swift", "C/C++", "Pascal/Object Pascal")
+    
+    fun greetLanguages(languages : List<String>, greeter : Greeter) {
+        languages.forEach { greeter.greet(it)}
+    }
+    
+    println("\nJava model")
+    greetLanguages(languages, object : Greeter { override fun greet(item : String) { println("Hello $item") }})
+    
+    println("\nSAM Kotlin model")
+    greetLanguages(languages) { println("Hello $it")}
+
+}
+*/
 
 
 
